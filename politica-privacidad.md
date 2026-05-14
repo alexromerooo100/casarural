@@ -2,12 +2,12 @@
 
 Última actualización: 14 de mayo de 2026.
 
-En **Casa rural de pruebas** respetamos tu privacidad y tratamos tus datos personales conforme al Reglamento (UE) 2016/679 (RGPD), la Ley Orgánica 3/2018 (LOPDGDD) y la Ley 34/2002 (LSSI-CE).
+En **Casa Rural La Encina** respetamos tu privacidad y tratamos tus datos personales conforme al Reglamento (UE) 2016/679 (RGPD), la Ley Orgánica 3/2018 (LOPDGDD) y la Ley 34/2002 (LSSI-CE).
 
 ## 1. Responsable del tratamiento
 
-- **Titular:** Casa rural de pruebas
-- **Correo de contacto:** info@casaruralpruebas.com
+- **Titular:** Casa Rural La Encina
+- **Correo de contacto:** info@casarurallaencina.com
 
 ## 2. Datos que tratamos
 
@@ -47,7 +47,7 @@ Puedes ejercer tus derechos de:
 - Limitación del tratamiento
 - Portabilidad
 
-Para ello, escribe a **info@casaruralpruebas.com** indicando el derecho que deseas ejercer y adjuntando un documento identificativo cuando sea necesario.
+Para ello, escribe a **info@casarurallaencina.com** indicando el derecho que deseas ejercer y adjuntando un documento identificativo cuando sea necesario.
 
 También puedes presentar una reclamación ante la Agencia Española de Protección de Datos (AEPD): https://www.aepd.es
 
