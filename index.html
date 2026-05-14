@@ -1,9 +1,10 @@
 <!doctype html>
-<html lang="es">
+<html lang="es-ES">
 <head>
   <meta charset="UTF-8" />
+  <meta http-equiv="Content-Language" content="es" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Casa rural de pruebas - actividad con ChatGPT</title>
+  <title>Casa Rural La Encina · Alojamiento en Cádiz</title>
   <style>
     :root {
       --bg: #f7f5f0;
@@ -12,274 +13,137 @@
       --accent-2: #1f8a70;
       --card: #ffffff;
     }
-
     * { box-sizing: border-box; }
-
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.5;
-    }
-
-    header {
-      background: linear-gradient(135deg, #d9e6f2, #e9f3ef);
-      padding: 1.25rem;
-      position: sticky;
-      top: 0;
-      z-index: 50;
-      border-bottom: 1px solid #c7d6e0;
-    }
-
-    .header-wrap {
-      max-width: 1100px;
-      margin: 0 auto;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.75rem 1.5rem;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    h1 {
-      font-size: 1.4rem;
-      margin: 0;
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.8rem;
-      margin: 0;
-      padding: 0;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: var(--accent);
-      font-weight: 700;
-    }
-
-    main {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 1rem;
-      display: grid;
-      gap: 2rem;
-    }
-
-    .hero img {
-      width: 100%;
-      height: min(55vw, 520px);
-      object-fit: cover;
-      border-radius: 12px;
-      box-shadow: 0 10px 30px rgba(36, 50, 61, 0.15);
-    }
-
-    section h2 {
-      margin-top: 0;
-      color: #1f4e6d;
-    }
-
-    .features {
-      background: var(--card);
-      border-radius: 12px;
-      padding: 1rem;
-      box-shadow: 0 6px 15px rgba(0,0,0,0.08);
-    }
-
-    .features ul {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 0.5rem 1rem;
-      padding-left: 1.2rem;
-      margin: 0;
-    }
-
-    .map iframe {
-      width: 100%;
-      min-height: 350px;
-      border: 0;
-      border-radius: 12px;
-      box-shadow: 0 6px 15px rgba(0,0,0,0.08);
-    }
-
-    .gallery-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-      gap: 0.75rem;
-    }
-
-    .gallery-grid img {
-      width: 100%;
-      height: 180px;
-      object-fit: cover;
-      border-radius: 10px;
-    }
-
-    .reviews {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 1rem;
-    }
-
-    .review {
-      background: var(--card);
-      border-left: 5px solid var(--accent-2);
-      border-radius: 8px;
-      padding: 1rem;
-      box-shadow: 0 5px 12px rgba(0,0,0,0.07);
-    }
-
-    .actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.8rem;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 0.75rem 1rem;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: 700;
-      color: #fff;
-    }
-
+    body { margin: 0; font-family: Arial, Helvetica, sans-serif; background: var(--bg); color: var(--text); line-height: 1.5; }
+    header { background: linear-gradient(135deg, #d9e6f2, #e9f3ef); padding: 1.25rem; position: sticky; top: 0; z-index: 50; border-bottom: 1px solid #c7d6e0; }
+    .header-wrap { max-width: 1100px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 0.75rem 1.5rem; align-items: center; justify-content: space-between; }
+    h1 { font-size: 1.4rem; margin: 0; }
+    nav ul { list-style: none; display: flex; flex-wrap: wrap; gap: 0.8rem; margin: 0; padding: 0; }
+    nav a { text-decoration: none; color: var(--accent); font-weight: 700; }
+    main { max-width: 1100px; margin: 0 auto; padding: 1rem; display: grid; gap: 2rem; }
+    .hero img { width: 100%; height: min(55vw, 520px); object-fit: cover; border-radius: 12px; box-shadow: 0 10px 30px rgba(36, 50, 61, 0.15); }
+    section h2 { margin-top: 0; color: #1f4e6d; }
+    .features { background: var(--card); border-radius: 12px; padding: 1rem; box-shadow: 0 6px 15px rgba(0,0,0,0.08); }
+    .features ul { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 0.5rem 1rem; padding-left: 1.2rem; margin: 0; }
+    .map iframe { width: 100%; min-height: 350px; border: 0; border-radius: 12px; box-shadow: 0 6px 15px rgba(0,0,0,0.08); }
+    .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 0.75rem; }
+    .gallery-grid img { width: 100%; height: 180px; object-fit: cover; border-radius: 10px; }
+    .reviews { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; }
+    .review { background: var(--card); border-left: 5px solid var(--accent-2); border-radius: 8px; padding: 1rem; box-shadow: 0 5px 12px rgba(0,0,0,0.07); }
+    .actions { display: flex; flex-wrap: wrap; gap: 0.8rem; }
+    .btn { display: inline-block; padding: 0.75rem 1rem; border-radius: 8px; text-decoration: none; font-weight: 700; color: #fff; }
     .btn-contact { background: var(--accent); }
     .btn-whatsapp { background: #25D366; }
-
-    footer {
-      margin-top: 2rem;
-      padding: 1rem;
-      background: #1f2d36;
-      color: #d6e2eb;
-    }
-
-    .footer-wrap {
-      max-width: 1100px;
-      margin: 0 auto;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    footer a {
-      color: #9ed0ff;
-      text-decoration: none;
-      margin-right: 0.8rem;
-    }
+    footer { margin-top: 2rem; padding: 1rem; background: #1f2d36; color: #d6e2eb; }
+    .footer-wrap { max-width: 1100px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 1rem; justify-content: space-between; align-items: center; }
+    footer a { color: #9ed0ff; text-decoration: none; margin-right: 0.8rem; }
   </style>
 </head>
 <body>
   <header>
     <div class="header-wrap">
-      <h1>Casa rural de pruebas - actividad con ChatGPT</h1>
+      <h1>Casa Rural La Encina · Cádiz</h1>
       <nav aria-label="Navegación principal">
         <ul>
           <li><a href="#inicio">Inicio</a></li>
           <li><a href="#caracteristicas">Características</a></li>
-          <li><a href="#mapa">Mapa</a></li>
+          <li><a href="#mapa">Cómo llegar</a></li>
           <li><a href="#galeria">Galería</a></li>
-          <li><a href="#resenas">Reseñas</a></li>
-          <li><a href="#contacto">Contacto</a></li>
+          <li><a href="#resenas">Opiniones</a></li>
+          <li><a href="#contacto">Reservas</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main id="inicio">
-    <section class="hero" aria-label="Foto principal">
-      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1600&q=80" alt="Casa rural rodeada de naturaleza en Cádiz" />
+    <section class="hero" aria-label="Imagen principal del alojamiento">
+      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1600&q=80" alt="Casa rural con piscina en un entorno natural de Cádiz" />
     </section>
 
     <section id="caracteristicas" class="features">
-      <h2>Características</h2>
+      <h2>Tu escapada perfecta en la sierra gaditana</h2>
       <ul>
-        <li>4 habitaciones</li>
-        <li>Piscina</li>
-        <li>WiFi</li>
-        <li>Barbacoa</li>
-        <li>Cerca de la playa</li>
-        <li>Entorno natural</li>
+        <li>4 habitaciones dobles</li>
+        <li>Piscina privada</li>
+        <li>Wifi gratuito</li>
+        <li>Zona de barbacoa</li>
+        <li>A 15 min de la playa</li>
+        <li>Rutas de senderismo cercanas</li>
       </ul>
     </section>
 
     <section id="mapa" class="map">
-      <h2>Ubicación en Cádiz</h2>
+      <h2>Cómo llegar a Casa Rural La Encina</h2>
       <iframe
-        title="Mapa de Cádiz"
-        src="https://www.google.com/maps?q=C%C3%A1diz%2C%20Espa%C3%B1a&output=embed"
+        title="Mapa de ubicación de Casa Rural La Encina en Cádiz"
+        src="https://www.google.com/maps?q=C%C3%A1diz%2C%20Espa%C3%B1a&hl=es&output=embed"
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
 
     <section id="galeria">
-      <h2>Galería de fotos</h2>
+      <h2>Galería de imágenes</h2>
       <div class="gallery-grid">
-        <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=900&q=80" alt="Paisaje de campo" />
-        <img src="https://images.unsplash.com/photo-1470770903676-69b98201ea1c?auto=format&fit=crop&w=900&q=80" alt="Atardecer en la naturaleza" />
-        <img src="https://images.unsplash.com/photo-1499696010180-025ef6e1a8f9?auto=format&fit=crop&w=900&q=80" alt="Casa rural con jardín" />
-        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=900&q=80" alt="Sendero natural" />
-        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80" alt="Piscina exterior" />
-        <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=900&q=80" alt="Zona de bosque" />
+        <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=900&q=80" alt="Paisaje natural de la sierra" />
+        <img src="https://images.unsplash.com/photo-1470770903676-69b98201ea1c?auto=format&fit=crop&w=900&q=80" alt="Atardecer visto desde la finca" />
+        <img src="https://images.unsplash.com/photo-1499696010180-025ef6e1a8f9?auto=format&fit=crop&w=900&q=80" alt="Fachada de la casa rural" />
+        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=900&q=80" alt="Sendero entre pinos" />
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80" alt="Zona de piscina y descanso" />
+        <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=900&q=80" alt="Bosque en los alrededores" />
       </div>
     </section>
 
     <section id="resenas">
-      <h2>Reseñas de clientes</h2>
+      <h2>Opiniones de huéspedes</h2>
       <div class="reviews">
         <article class="review">
-          <p>“Estancia fantástica, la casa es muy cómoda y el entorno es precioso.”</p>
+          <p>“Una estancia increíble. Todo muy limpio y con mucha calma.”</p>
           <strong>— Marta G.</strong>
         </article>
         <article class="review">
-          <p>“Ideal para desconectar. La piscina y la barbacoa fueron lo mejor del fin de semana.”</p>
+          <p>“Fuimos en familia y lo pasamos genial. La piscina y la barbacoa son un plus.”</p>
           <strong>— Luis R.</strong>
         </article>
         <article class="review">
-          <p>“Muy cerca de la playa y con mucha tranquilidad. Repetiremos seguro.”</p>
+          <p>“Sitio ideal para descansar y desconectar. Volveremos en verano.”</p>
           <strong>— Ana P.</strong>
         </article>
       </div>
     </section>
 
     <section id="contacto">
-      <h2>Reserva y contacto</h2>
+      <h2>Reserva tu estancia</h2>
       <div class="actions">
-        <a class="btn btn-contact" href="mailto:info@casaruralpruebas.com">Contactar</a>
-        <a class="btn btn-whatsapp" href="https://wa.me/34600000000" target="_blank" rel="noopener noreferrer">Chatear por WhatsApp</a>
+        <a class="btn btn-contact" href="mailto:info@casarurallaencina.com">Enviar correo</a>
+        <a class="btn btn-whatsapp" href="https://wa.me/34600000000" target="_blank" rel="noopener noreferrer">Enviar WhatsApp</a>
       </div>
     </section>
 
     <section id="politica-privacidad" class="features">
       <h2>Política de privacidad</h2>
-      <p>Tratamos tus datos para gestionar consultas y reservas, cumpliendo RGPD y LOPDGDD. Puedes ejercer tus derechos en info@casaruralpruebas.com.</p>
-      <p><a href="politica-privacidad.md">Leer política de privacidad completa</a></p>
+      <p>Tratamos tus datos para responder consultas y gestionar reservas conforme al RGPD y la LOPDGDD.</p>
+      <p><a href="politica-privacidad.md">Ver la política completa</a></p>
     </section>
 
     <section id="aviso-legal" class="features">
       <h2>Aviso legal</h2>
-      <p>Este sitio informa sobre el alojamiento rural y su contacto. El uso de la web implica aceptación de sus condiciones y normativa aplicable.</p>
-      <p><a href="aviso-legal.md">Leer aviso legal completo</a></p>
+      <p>Este sitio informa sobre el alojamiento, sus servicios y los canales de reserva disponibles.</p>
+      <p><a href="aviso-legal.md">Ver el aviso legal completo</a></p>
     </section>
 
     <section id="cookies" class="features">
       <h2>Política de cookies</h2>
-      <p>Utilizamos cookies técnicas y, en su caso, analíticas para mejorar la experiencia de navegación. Puedes gestionarlas desde tu navegador.</p>
-      <p><a href="cookies.md">Leer política de cookies completa</a></p>
+      <p>Usamos cookies técnicas y, si procede, analíticas para mejorar la experiencia de navegación.</p>
+      <p><a href="cookies.md">Ver la política de cookies completa</a></p>
     </section>
   </main>
 
   <footer>
     <div class="footer-wrap">
-      <p>&copy; 2026 Casa rural de pruebas</p>
+      <p>&copy; 2026 Casa Rural La Encina</p>
       <div>
-        <a href="#politica-privacidad">Política de privacidad</a>
+        <a href="#politica-privacidad">Privacidad</a>
         <a href="#aviso-legal">Aviso legal</a>
         <a href="#cookies">Cookies</a>
       </div>

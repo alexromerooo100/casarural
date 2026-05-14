@@ -6,8 +6,8 @@ En cumplimiento de la Ley 34/2002, de servicios de la sociedad de la informació
 
 ## 1. Titular del sitio web
 
-- **Titular:** Casa rural de pruebas
-- **Correo electrónico:** info@casaruralpruebas.com
+- **Titular:** Casa Rural La Encina
+- **Correo electrónico:** info@casarurallaencina.com
 - **Actividad:** Alquiler turístico de alojamiento rural.
 
 ## 2. Objeto
